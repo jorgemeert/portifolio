@@ -11,7 +11,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Montserrat", sans-serif;
   color: white;
 }
@@ -45,7 +46,7 @@ a:hover {
   gap: 15px;
   justify-self: center;
   background: black;
-  padding: 12px;
+  padding: 15px 20px;
   border-radius: 12px;
   background-color: rgba(30, 41, 59, 0.5);
   margin-top: 35px;
@@ -58,4 +59,109 @@ a:hover {
 }
 h1 {
   margin-bottom: 20px;
+  color: #94a3b8;
+  font-weight: 800;
+}
+h2 {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.conteudo_principal {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: 700px;
+  margin-left: 200px;
+}
+
+.foto_minha {
+  grid-column: 2;
+  border-radius: 10px;
+}
+
+.apresentacao {
+  display: grid;
+  gap: 10px;
+  place-self: center;
+  width: 450px;
+  place-items: start;
+}
+
+.baixarCv {
+  border-radius: 7px;
+  padding: 5px 15px;
+  background-color: #3b82f6;
+  box-shadow: none;
+  color: #ffffff;
+}
+
+.apresentacao img {
+  width: 35px;
+  margin-right: 20px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.projetos {
+  display: grid;
+  justify-content: center;
+}
+
+.projetos_filhos {
+  width: 300px;
+  background-color: rgba(35, 45, 59, 0.8);
+  border-radius: 10px;
+  text-align: center;
+  padding: 12px;
+  display: grid;
+  place-content: space-between;
+}
+
+.titulo_projetos {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2ba6ff;
+}
+
+.sobre_projetos {
+  margin-bottom: 8px;
+}
+
+h3 {
+  margin-top: 80px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #94a3b8;
+}
+
+.botao {
+  text-transform: uppercase;
+  background: #94a3b8;
+  color: #1e293b;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.frase_projetos {
+  margin-bottom: 23px;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.container {
+  display: flex;
+  gap: 35px;
+}
+.apresentacao p {
+  color: #93a5a3;
+}
+
+.sobre_projetos,
+.tecnologias {
+  color: #93a5a3;
 }
