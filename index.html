@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="PT-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Jorge Meert | Desenvolvedor Full Stack</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,16 +11,16 @@
       <nav>
         <div class="home">
           <a href="#">Início</a>
-          <a href="#">Projetos</a>
-          <a href="#">Sobre</a>
-          <a href="#">Contato</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
         </div>
       </nav>
     </header>
 
     <main>
       <div class="conteudo_principal">
-        <section class="apresentacao">
+        <section class="apresentacao" id="sobre">
           <h2>Eu sou Jorge Meert</h2>
           <h1>Desenvolvedor Full Stack</h1>
           <p>
@@ -29,48 +29,291 @@
           </p>
 
           <p>
-            Transformando ideias em códigos funcionais. Atualmente Focado em
+            Transformando ideias em códigos funcionais. Atualmente focado em
             desenvolvimento web moderno com tecnologias como Python e JavaScript
           </p>
 
-          <button class="baixarCv">Baixar CV</button>
+          <a class="baixarCv" href="curriculo-jorge.pdf" download>Baixar CV</a>
           <div class="fotos">
-            <img src="foto_github.png" alt="LOGO GITHUB" />
-            <img src="foto_linkedin.png" alt="LOGO LINKEDIN" />
+            <a
+              href="https://github.com/jorgemeert"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="foto_github.png" alt="Logo do GitHub" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jorge-meert/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="foto_linkedin.png" alt="Logo do LinkedIn" />
+            </a>
           </div>
         </section>
-        <img class="foto_minha" src="foto_3x4.PNG" alt="FOTO 3X4" />
+        <img class="foto_minha" src="foto_3x4.PNG" alt="Foto de Jorge Meert" />
       </div>
-      <section class="projetos">
+
+      <section class="projetos" id="projetos">
         <h3>Projetos</h3>
-        <p class="frase_projetos">Alguns dos meus Exercícios já feitos</p>
+        <p class="frase_projetos">Alguns dos meus projetos e exercícios</p>
+
+        <h4 class="subtitulo_projetos">Web e Front-end</h4>
         <div class="container">
-        <div class="projetos_filhos">
-          <p class="titulo_projetos"">Calculadora de IMC</p>
-          <p class="sobre_projetos">
-           Aplicação que calcula o índice de massa corporal em tempo real com lógica JavaScript e feedback instantâneo.
-          </p>
-          <p class="tecnologias">Tecnologias: HTML5, CSS3 (Flexbox/Grid) e JavaScript ES6+.</p>
-          <a class="botao" href="#">Ver Projeto</a>
-        </div>
-        <div class="projetos_filhos">
-          <p class="titulo_projetos"">Fashion Grid: Vitrine de Roupas</p>
-          <p class="sobre_projetos">
-           Interface de e-commerce desenvolvida para dominar o posicionamento avançado de elementos e estruturação de malhas complexas com CSS Grid Layout.
-          </p>
-          <p class="tecnologias">Tecnologias: HTML, CSS e Design Responsivo.</p>
-          <a class="botao" href="#">Ver Projeto</a>
-          </div>
           <div class="projetos_filhos">
-          <p class="titulo_projetos"">Bikcraft - Bicicletas Artesanais</p>
-          <p class="sobre_projetos">
-           Projeto de interface focado na experiência de e-commerce premium, explorando a integração entre design limpo e funcionalidade para a venda de produtos personalizados.
-          </p>
-          <p class="tecnologias">Tecnologias: HTML5, CSS3 (Flexbox/Grid) e Design Responsivo.</p>
-          <a class="botao" href="#">Ver Projeto</a>
+            <span class="selo">🏆 Campeão da GS na turma</span>
+            <p class="titulo_projetos">OrbitFlow</p>
+            <p class="sobre_projetos">
+              Aplicação web interativa que compara bases de lançamento de
+              foguetes pela latitude. Basta clicar no mapa para calcular o ganho
+              de rotação da Terra e classificar a eficiência energética.
+            </p>
+            <p class="tecnologias">
+              Tecnologias: HTML, CSS, JavaScript e Leaflet.js (OpenStreetMap).
+            </p>
+            <div class="acoes">
+              <a
+                class="botao"
+                href="https://orbit-flow-six.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver Projeto</a
+              >
+              <a
+                class="botao secundario"
+                href="https://github.com/jorgemeert/OrbitFlow"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Código</a
+              >
+            </div>
+          </div>
+
+          <div class="projetos_filhos">
+            <p class="titulo_projetos">Pokédex Web</p>
+            <p class="sobre_projetos">
+              Pokédex com visual de aparelho que busca dados na PokéAPI. Digite
+              o nome do Pokémon e veja o sprite de frente, de costas ou na
+              versão shiny, com tratamento de erros.
+            </p>
+            <p class="tecnologias">
+              Tecnologias: HTML5, CSS3, JavaScript (fetch e async/await) e
+              PokéAPI.
+            </p>
+            <div class="acoes">
+              <a
+                class="botao"
+                href="https://trabalhoapiweb.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver Projeto</a
+              >
+              <a
+                class="botao secundario"
+                href="https://github.com/jorgemeert/trabalho_api_web"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Código</a
+              >
+            </div>
+          </div>
+
+          <div class="projetos_filhos">
+            <p class="titulo_projetos">Bikcraft - Bicicletas Artesanais</p>
+            <p class="sobre_projetos">
+              Landing page para uma marca de bicicletas elétricas premium,
+              explorando CSS Grid em um layout assimétrico e Flexbox no menu de
+              navegação.
+            </p>
+            <p class="tecnologias">
+              Tecnologias: HTML5, CSS3 (Flexbox/Grid) e Design Responsivo.
+            </p>
+            <div class="acoes">
+              <a
+                class="botao"
+                href="https://project-com-flex-e-grid.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver Projeto</a
+              >
+              <a
+                class="botao secundario"
+                href="https://github.com/jorgemeert/bikcraft-landing-page"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Código</a
+              >
+            </div>
+          </div>
+
+          <div class="projetos_filhos">
+            <p class="titulo_projetos">Calculadora de IMC</p>
+            <p class="sobre_projetos">
+              Aplicação que calcula o índice de massa corporal em tempo real com
+              lógica JavaScript e feedback instantâneo.
+            </p>
+            <p class="tecnologias">
+              Tecnologias: HTML5, CSS3 (Flexbox/Grid) e JavaScript ES6+.
+            </p>
+            <div class="acoes">
+              <a class="botao" href="#">Ver Projeto</a>
+            </div>
+          </div>
+
+          <div class="projetos_filhos">
+            <p class="titulo_projetos">Fashion Grid: Vitrine de Roupas</p>
+            <p class="sobre_projetos">
+              Interface de e-commerce feita para dominar o posicionamento
+              avançado de elementos e malhas complexas com CSS Grid Layout.
+            </p>
+            <p class="tecnologias">
+              Tecnologias: HTML, CSS e Design Responsivo.
+            </p>
+            <div class="acoes">
+              <a class="botao" href="#">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="subtitulo_projetos">Python e Back-end</h4>
+        <div class="container">
+          <div class="projetos_filhos">
+            <p class="titulo_projetos">Conversor de Moedas</p>
+            <p class="sobre_projetos">
+              Programa de terminal que converte valores entre duas moedas usando
+              cotações em tempo real da AwesomeAPI, validando as siglas
+              digitadas antes de calcular.
+            </p>
+            <p class="tecnologias">
+              Tecnologias: Python 3, requests, xmltodict e JSON.
+            </p>
+            <div class="acoes">
+              <a
+                class="botao"
+                href="https://github.com/jorgemeert/conversor-de-moedas"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Código</a
+              >
+            </div>
+          </div>
+
+          <div class="projetos_filhos">
+            <p class="titulo_projetos">Conversor de Arquivos</p>
+            <p class="sobre_projetos">
+              Aplicação web em grupo que converte arquivos entre CSV, XLSX, JSON
+              e Parquet: o usuário envia o arquivo, vê os dados em uma tabela e
+              baixa o resultado.
+            </p>
+            <p class="tecnologias">Tecnologias: Python, Streamlit e Pandas.</p>
+            <div class="acoes">
+              <a
+                class="botao"
+                href="https://github.com/jorgemeert/data_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Código</a
+              >
+            </div>
+          </div>
+
+          <div class="projetos_filhos">
+            <p class="titulo_projetos">Python Practice</p>
+            <p class="sobre_projetos">
+              20 exercícios de lógica de programação em 4 níveis de dificuldade,
+              de validadores simples a sistemas com classes, como banco e
+              biblioteca.
+            </p>
+            <p class="tecnologias">
+              Tecnologias: Python 3, funções, classes, type hints e try/except.
+            </p>
+            <div class="acoes">
+              <a
+                class="botao"
+                href="https://github.com/jorgemeert/exercicios_python"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Código</a
+              >
+            </div>
+          </div>
+
+          <div class="projetos_filhos">
+            <p class="titulo_projetos">B2BFlow — Conexão que Converte</p>
+            <p class="sobre_projetos">
+              Integração em Python que consulta contatos armazenados no Supabase
+              e automatiza o envio de mensagens pelo WhatsApp usando a Z-API. A
+              tabela de contatos inclui nome e telefone no formato E.164;
+              credenciais e configurações são carregadas por variáveis de
+              ambiente.
+            </p>
+            <p class="tecnologias">
+              Tecnologias: Python, Supabase, Z-API e variáveis de ambiente
+              (.env).
+            </p>
+            <div class="acoes">
+              <a
+                class="botao"
+                href="https://github.com/jorgemeert/b2bflow_teste"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Código</a
+              >
+            </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="rodape" id="contato">
+      <p class="rodape_titulo">Vamos conversar?</p>
+      <div class="links_contato">
+        <a
+          class="icone_contato"
+          href="mailto:jorgeflmrt@gmail.com"
+          aria-label="Enviar e-mail para Jorge Meert"
+          title="E-mail"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.1-.55 6.9 5.3 6.9-5.3H5.1Zm13.9 1.9-6.39 4.9a1 1 0 0 1-1.22 0L5 8.1v9.15c0 .41.34.75.75.75h12.5c.41 0 .75-.34.75-.75V8.1Z"
+            />
+          </svg>
+          <span class="texto_acessivel">jorgeflmrt@gmail.com</span>
+        </a>
+
+        <a
+          class="icone_contato"
+          href="https://wa.me/5551995949116"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Conversar com Jorge Meert pelo WhatsApp"
+          title="WhatsApp"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12.04 2a9.9 9.9 0 0 0-8.48 15.02L2.2 22l5.1-1.34A9.98 9.98 0 1 0 12.04 2Zm0 18.1a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.02.8.81-2.94-.2-.31A8.1 8.1 0 1 1 12.04 20.1Zm4.45-6.07c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.18-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.02-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.01.4 1.35.51.57.18 1.09.16 1.5.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"
+            />
+          </svg>
+          <span class="texto_acessivel">WhatsApp: (51) 99594-9116</span>
+        </a>
+
+        <a
+          class="icone_contato"
+          href="https://www.instagram.com/jorge_meert/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Abrir Instagram de Jorge Meert"
+          title="Instagram"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm0 2A3.2 3.2 0 0 0 4 7.2v9.6A3.2 3.2 0 0 0 7.2 20h9.6a3.2 3.2 0 0 0 3.2-3.2V7.2A3.2 3.2 0 0 0 16.8 4H7.2Zm4.8 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-3.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"
+            />
+          </svg>
+          <span class="texto_acessivel">Instagram: @jorge_meert</span>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
